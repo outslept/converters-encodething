@@ -1,0 +1,14 @@
+.k {
+  @apply
+  rounded-md
+  py-0
+  px-2
+  border
+  border-solid
+  border-ds-gray-alpha-400
+  h-7
+  text-sm
+  leading-[143%]
+  text-center
+  text-ds-gray-1000
+}

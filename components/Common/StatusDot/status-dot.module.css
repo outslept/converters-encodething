@@ -1,0 +1,12 @@
+.c {
+  @apply
+  flex
+  items-center
+  gap-2
+}
+
+.l {
+  @apply
+  text-base
+  text-ds-gray-1000
+}

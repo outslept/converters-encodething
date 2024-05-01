@@ -1,0 +1,19 @@
+.l {
+  @apply
+  flex
+  items-center
+  w-fit
+  gap-0.5
+  text-ds-color-primary-accents-5
+  leading-[143%]
+  text-sm
+  font-[84]
+}
+
+.l:hover, .l:hover svg path {
+  @apply
+  transition-colors
+  duration-200
+  text-ds-color-primary-ds-foreground
+  stroke-ds-color-primary-ds-foreground
+}

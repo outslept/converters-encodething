@@ -1,0 +1,35 @@
+.c {
+  @apply 
+  relative
+}
+
+.h {
+  @apply
+  flex
+  items-center
+  gap-2
+}
+
+.t {
+  @apply
+  text-sm
+  leading-[143%]
+  text-ds-gray-900
+  mb-0
+}
+
+.c:hover .x {
+  @apply
+  opacity-100
+}
+
+.x {
+  @apply
+  opacity-0
+  transition-opacity
+  duration-300
+  text-sm
+  leading-[143%]
+  font-medium
+  text-ds-gray-1000
+}

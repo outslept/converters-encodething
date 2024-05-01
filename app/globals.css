@@ -1,0 +1,787 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+  --ds-focus: var(--ds-blue-900, 210 100% 66%);
+  --ds-amber-100: 35 100% 8%;
+  --ds-amber-1000: 40 94% 93%;
+  --ds-amber-200: 32 100% 10%;
+  --ds-amber-300: 33 100% 15%;
+  --ds-amber-400: 35 100% 17%;
+  --ds-amber-500: 35 91% 22%;
+  --ds-amber-600: 39 85% 49%;
+  --ds-amber-700: 39 100% 57%;
+  --ds-amber-800: 35 100% 52%;
+  --ds-amber-900: 35 100% 52%;
+  --ds-background-100: 0 0 4%;
+  --ds-background-200: 0 0 0%;
+  --ds-blue-100: 216 50% 12%;
+  --ds-blue-1000: 206 100% 96%;
+  --ds-blue-200: 214 59% 15%;
+  --ds-blue-300: 213 71% 20%;
+  --ds-blue-400: 212 78% 23%;
+  --ds-blue-500: 211 86% 27%;
+  --ds-blue-600: 206 100% 50%;
+  --ds-blue-700: 212 100% 48%;
+  --ds-blue-800: 212 100% 41%;
+  --ds-blue-900: 210 100% 66%;
+  --ds-focus-border: var(--ds-gray-alpha-700, 0 0 100% / 0.54);
+  --ds-gray-100: 0 0 10%;
+  --ds-gray-1000: 0 0 93%;
+  --ds-gray-200: 0 0 12%;
+  --ds-gray-300: 0 0 16%;
+  --ds-gray-400: 0 0 18%;
+  --ds-gray-500: 0 0 27%;
+  --ds-gray-600: 0 0 53%;
+  --ds-gray-700: 0 0 56%;
+  --ds-gray-800: 0 0 49%;
+  --ds-gray-900: 0 0 63%;
+  --ds-gray-alpha-100: 0 0 100% / 0.06;
+  --ds-gray-alpha-1000: 0 0 100% / 0.92;
+  --ds-gray-alpha-200: 0 0 100% / 0.09;
+  --ds-gray-alpha-300: 0 0 100% / 0.13;
+  --ds-gray-alpha-400: 0 0 100% / 0.14;
+  --ds-gray-alpha-500: 0 0 100% / 0.24;
+  --ds-gray-alpha-600: 0 0 100% / 0.51;
+  --ds-gray-alpha-700: 0 0 100% / 0.54;
+  --ds-gray-alpha-800: 0 0 100% / 0.47;
+  --ds-gray-alpha-900: 0 0 100% / 0.61;
+  --ds-green-100: 136 50% 9%;
+  --ds-green-1000: 136 73% 94%;
+  --ds-green-200: 137 50% 12%;
+  --ds-green-300: 136 50% 14%;
+  --ds-green-400: 135 70% 16%;
+  --ds-green-500: 135 70% 23%;
+  --ds-green-600: 135 70% 34%;
+  --ds-green-700: 131 41% 46%;
+  --ds-green-800: 132 43% 39%;
+  --ds-green-900: 131 43% 57%;
+  --ds-pink-100: 335 32% 12%;
+  --ds-pink-1000: 333 90% 96%;
+  --ds-pink-200: 335 43% 16%;
+  --ds-pink-300: 335 47% 21%;
+  --ds-pink-400: 335 51% 22%;
+  --ds-pink-500: 335 57% 27%;
+  --ds-pink-600: 336 75% 40%;
+  --ds-pink-700: 336 80% 58%;
+  --ds-pink-800: 336 74% 51%;
+  --ds-pink-900: 341 90% 67%;
+  --ds-purple-100: 283 30% 12%;
+  --ds-purple-1000: 281 73% 96%;
+  --ds-purple-200: 281 38% 16%;
+  --ds-purple-300: 279 44% 23%;
+  --ds-purple-400: 277 46% 28%;
+  --ds-purple-500: 274 49% 35%;
+  --ds-purple-600: 272 51% 54%;
+  --ds-purple-700: 272 51% 54%;
+  --ds-purple-800: 272 47% 45%;
+  --ds-purple-900: 275 80% 71%;
+  --ds-red-100: 357 37% 12%;
+  --ds-red-1000: 353 90% 96%;
+  --ds-red-200: 357 46% 16%;
+  --ds-red-300: 356 54% 22%;
+  --ds-red-400: 357 55% 26%;
+  --ds-red-500: 357 60% 32%;
+  --ds-red-600: 358 75% 59%;
+  --ds-red-700: 358 75% 59%;
+  --ds-red-800: 358 69% 52%;
+  --ds-red-900: 358 100% 69%;
+  --ds-teal-100: 169 78% 7%;
+  --ds-teal-1000: 166 71% 93%;
+  --ds-teal-200: 170 74% 9%;
+  --ds-teal-300: 171 75% 13%;
+  --ds-teal-400: 171 85% 13%;
+  --ds-teal-500: 172 85% 20%;
+  --ds-teal-600: 172 85% 32%;
+  --ds-teal-700: 173 80% 36%;
+  --ds-teal-800: 173 83% 30%;
+  --ds-teal-900: 174 90% 41%;
+  --ds-color-link-color: var(--ds-color-success-success-light, 212 100% 60%);
+  --ds-color-marketing-gray: var(--ds-color-primary-accents-1, 0 0 7%);
+  --ds-color-cyan-cyan: 167 72% 60%;
+  --ds-color-cyan-cyan-dark: 167 64% 45%;
+  --ds-color-cyan-cyan-light: 167 100% 74%;
+  --ds-color-cyan-cyan-lighter: 167 100% 83%;
+  --ds-color-error-error: 0 100% 47%;
+  --ds-color-error-error-dark: 0 100% 39%;
+  --ds-color-error-error-light: 0 100% 55%;
+  --ds-color-error-error-lighter: 357 69% 90%;
+  --ds-color-highlight-highlight-magenta: 336 82% 57%;
+  --ds-color-highlight-highlight-pink: 330 100% 50%;
+  --ds-color-highlight-highlight-purple: 305 94% 54%;
+  --ds-color-highlight-highlight-yellow: 58 100% 50%;
+  --ds-color-primary-accents-1: 0 0 7%;
+  --ds-color-primary-accents-2: 0 0 20%;
+  --ds-color-primary-accents-3: 0 0 27%;
+  --ds-color-primary-accents-4: 0 0 40%;
+  --ds-color-primary-accents-5: 0 0 53%;
+  --ds-color-primary-accents-6: 0 0 60%;
+  --ds-color-primary-accents-7: 0 0 92%;
+  --ds-color-primary-accents-8: 0 0 98%;
+  --ds-color-primary-ds-background: 0 0 0%;
+  --ds-color-primary-ds-foreground: 0 0 100%;
+  --ds-color-secondary-ds-secondary: var(--ds-color-primary-accents-5, 0 0 53%);
+  --ds-color-secondary-ds-secondary-dark: var(--ds-color-primary-accents-7, 0 0 92%);
+  --ds-color-secondary-ds-secondary-lighter: var(--ds-color-primary-accents-2, 0 0 20%);
+  --ds-color-secondary-secondary-light: var(--ds-color-primary-accents-3, 0 0 27%);
+  --ds-color-success-success: 212 100% 48%;
+  --ds-color-success-success-dark: 213 94% 42%;
+  --ds-color-success-success-light: 212 100% 60%;
+  --ds-color-success-success-lighter: 215 100% 91%;
+  --ds-color-violet-ds-violet: 270 67% 47%;
+  --ds-color-violet-ds-violet-dark: 262 55% 35%;
+  --ds-color-violet-ds-violet-light: 261 55% 61%;
+  --ds-color-violet-ds-violet-lighter: 259 57% 87%;
+  --ds-color-warning-ds-warning: 37 91% 55%;
+  --ds-color-warning-ds-warning-dark: 29 89% 35%;
+  --ds-color-warning-warning-light: 37 91% 65%;
+  --ds-color-warning-warning-lighter: 40 100% 91%;
+  --vaul-overlay-background: 0 0 100%;
+  --vaul-overlay-background-end: 0 0 0% / 0.4;
+  --vaul-overlay-background-start: 0 0 0% / 0;
+  }
+}
+
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio, #theatrejs-studio-root, svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+- fix for the content editable attribute will work properly.
+- webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element */
+:where([contenteditable]:not([contenteditable='false'])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  line-break: after-white-space;
+  user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable='true']) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+
+kbd {
+  margin-top: 0 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color-scheme: dark;
+    text-size-adjust: 100%;
+    margin: 0;
+    color: #e6edf3;
+    background-color: #0d1117;
+    font-family: 'Overused Grotesk', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+
+  details,
+  figcaption,
+  figure {
+    display: block;
+  }
+
+  summary {
+    display: list-item;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  a {
+    background-color: transparent;
+    color: currentcolor;
+    text-decoration: none;
+  }
+
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+  }
+
+  b,
+  strong {
+    font-weight: 600;
+  }
+
+  dfn {
+    font-style: italic;
+  }
+
+  h1 {
+    margin: 0.67em 0;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 2em;
+  }
+
+  mark {
+    background-color: rgb(187 128 9 / 15%);
+    color: #e6edf3;
+  }
+
+  small {
+    font-size: 90%;
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  img {
+    border-style: none;
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: transparent;
+  }
+
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: monospace;
+    font-size: 1em;
+  }
+
+  figure {
+    margin: 1em 40px;
+  }
+
+  hr {
+    box-sizing: content-box;
+    overflow: hidden;
+    background: transparent;
+    border-bottom: 1px solid #21262d;
+    height: 0.05em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: #30363d;
+    border: 0;
+  }
+
+  input {
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  [type='button'],
+  [type='reset'],
+  [type='submit'] {
+    appearance: button;
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  [type='number']::-webkit-inner-spin-button,
+  [type='number']::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+  [type='search']::-webkit-search-cancel-button,
+  [type='search']::-webkit-search-decoration {
+    appearance: none;
+  }
+
+  ::input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+  }
+
+  ::-webkit-file-upload-button {
+    appearance: button;
+    font: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  ::placeholder {
+    color: #6e7681;
+    opacity: 1;
+  }
+
+  hr::before {
+    display: table;
+    content: '';
+  }
+
+  hr::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+  }
+
+  td,
+  th {
+    padding: 0;
+  }
+
+  details summary {
+    cursor: pointer;
+  }
+
+  details:not([open]) > *:not(summary) {
+    display: none !important;
+  }
+
+  a:focus,
+  [role='button']:focus,
+  input[type='radio']:focus,
+  input[type='checkbox']:focus {
+    outline: 2px solid #2f81f7;
+    outline-offset: -2px;
+    box-shadow: none;
+  }
+
+  a:focus:not(:focus-visible),
+  [role='button']:focus:not(:focus-visible),
+  input[type='radio']:focus:not(:focus-visible),
+  input[type='checkbox']:focus:not(:focus-visible) {
+    outline: solid 1px transparent;
+  }
+
+  a:focus-visible,
+  [role='button']:focus-visible,
+  input[type='radio']:focus-visible,
+  input[type='checkbox']:focus-visible {
+    outline: 2px solid #2f81f7;
+    outline-offset: -2px;
+    box-shadow: none;
+  }
+
+  a:not([class]):focus,
+  a:not([class]):focus-visible,
+  input[type='radio']:focus,
+  input[type='radio']:focus-visible,
+  input[type='checkbox']:focus,
+  input[type='checkbox']:focus-visible {
+    outline-offset: 0;
+  }
+
+  kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font:
+      11px ui-monospace,
+      SFMono-Regular,
+      "SF Mono",
+      Menlo,
+      Consolas,
+      "Liberation Mono",
+      monospace;
+    line-height: 10px;
+    color: #e6edf3;
+    vertical-align: middle;
+    background-color: #161b22;
+    border: solid 1px rgb(110 118 129 / 40%);
+    border-bottom-color: rgb(110 118 129 / 40%);
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 rgb(110 118 129 / 40%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 0.875em;
+  }
+
+  h6 {
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #848d97;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #848d97;
+    border-left: 0.25em solid #30363d;
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  ol ol,
+  ul ol {
+    list-style-type: lower-roman;
+  }
+
+  ul ul ol,
+  ul ol ol,
+  ol ul ol,
+  ol ol ol {
+    list-style-type: lower-alpha;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+
+  tt,
+  code,
+  samp {
+    font-family:
+      ui-monospace,
+      SFMono-Regular,
+      "SF Mono",
+      Menlo,
+      Consolas,
+      "Liberation Mono",
+      monospace;
+    font-size: 12px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family:
+      ui-monospace,
+      SFMono-Regular,
+      "SF Mono",
+      Menlo,
+      Consolas,
+      "Liberation Mono",
+      monospace;
+    font-size: 12px;
+    word-wrap: normal;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: none;
+  }
+
+  *:first-child {
+    margin-top: 0 !important;
+  }
+
+  *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl,
+  table,
+  pre,
+  details {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  blockquote > :first-child {
+    margin-top: 0;
+  }
+
+  blockquote > :last-child {
+    margin-bottom: 0;
+  }
+
+  h1 tt,
+  h1 code,
+  h2 tt,
+  h2 code,
+  h3 tt,
+  h3 code,
+  h4 tt,
+  h4 code,
+  h5 tt,
+  h5 code,
+  h6 tt,
+  h6 code {
+    padding: 0 0.2em;
+    font-size: inherit;
+  }
+
+  summary h1,
+  summary h2,
+  summary h3,
+  summary h4,
+  summary h5,
+  summary h6 {
+    display: inline-block;
+  }
+
+  summary h1,
+  summary h2 {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  div > ol:not([type]) {
+    list-style-type: decimal;
+  }
+
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  li > p {
+    margin-top: 16px;
+  }
+
+  li + li {
+    margin-top: 0.25em;
+  }
+
+  dl {
+    padding: 0;
+  }
+
+  dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+
+  table th {
+    font-weight: 600;
+  }
+
+  table th,
+  table td {
+    padding: 6px 13px;
+    border: 1px solid #30363d;
+  }
+
+  table td > :last-child {
+    margin-bottom: 0;
+  }
+
+  table tr {
+    background-color: #0d1117;
+    border-top: 1px solid #21262d;
+  }
+
+  table tr:nth-child(2n) {
+    background-color: #161b22;
+  }
+
+  table img {
+    background-color: transparent;
+  }
+
+  img[align='right'] {
+    padding-left: 20px;
+  }
+
+  img[align='left'] {
+    padding-right: 20px;
+  }
+
+  code,
+  tt {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    white-space: break-spaces;
+    background-color: rgb(110 118 129 / 40%);
+    border-radius: 6px;
+  }
+
+  code br,
+  tt br {
+    display: none;
+  }
+
+  del code {
+    text-decoration: inherit;
+  }
+
+  samp {
+    font-size: 85%;
+  }
+
+  pre code {
+    font-size: 100%;
+  }
+
+  pre > code {
+    padding: 0;
+    margin: 0;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code,
+  pre tt {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+}

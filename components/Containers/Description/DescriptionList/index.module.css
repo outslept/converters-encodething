@@ -1,0 +1,8 @@
+.b {
+  @apply flex
+  flex-wrap
+  justify-center
+  gap-4
+  mx-auto
+  mt-3
+}

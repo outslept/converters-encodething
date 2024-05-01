@@ -1,0 +1,23 @@
+.l {
+  @apply
+  sr-only
+}
+
+.c {
+  @apply
+  h-2.5
+  rounded-md
+  bg-ds-color-primary-accents-2
+  overflow-hidden
+}
+
+.s {
+  @apply
+  absolute
+  top-0
+  left-0
+  text-xs
+  font-semibold
+text-white
+  ml-2
+}

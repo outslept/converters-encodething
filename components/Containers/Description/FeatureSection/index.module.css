@@ -1,0 +1,11 @@
+.s {
+  @apply lg:max-w-[260px]
+  text-ds-gray-900
+  text-[16px]
+  lg:text-[18px]
+}
+
+.t {
+  @apply font-semibold
+  text-ds-gray-1000
+}

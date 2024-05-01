@@ -1,0 +1,40 @@
+.j {
+  @apply 
+  flex
+  min-h-[80px]
+  max-w-[600px]
+  w-full
+  rounded-md
+  text-ds-gray-900
+  px-3
+  py-[10px]
+  text-sm
+  bg-ds-background-100
+  border
+  border-solid
+  border-ds-gray-alpha-400
+  active:text-ds-color-primary-ds-foreground
+  active:shadow-[0px_0px_0px_4px_var(--ds-gray-alpha-500),_0_0_0_1px_var(--ds-gray-alpha-600)]
+  hover:border-ds-gray-alpha-500
+  focus-visible:outline-none
+  focus-visible:ring-2
+  focus-visible:ring-offset-2
+  focus-visible:border-ds-gray-alpha-400
+  focus-visible:shadow-[0px_0px_0px_2px_var(--ds-blue-900)]
+  disabled:cursor-not-allowed
+  disabled:opacity-50
+  placeholder:font-normal
+  placeholder:text-[13px]
+  placeholder:leading-[123%]
+  placeholder:text-ds-gray-900
+}
+
+.h {
+  @apply
+  text-[13px]
+  leading-[123%]
+  font-[84]
+  text-ds-gray-900
+  peer-disabled:cursor-not-allowed
+  peer-disabled:opacity-70
+}
