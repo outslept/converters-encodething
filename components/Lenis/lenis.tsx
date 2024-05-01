@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
-import Lenis from '@studio-freight/lenis';
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 
 const useLenis = () => {
   useEffect(() => {
     const lenis = new Lenis();
 
-    lenis.on('scroll', (e) => {
+    lenis.on("scroll", (e) => {
       console.log(e);
     });
 
