@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { cn } from '@utils'
+import { cn } from '../../../lib/utils';
 import styles from './index.module.css'
 
 interface GreetingItemProps extends React.HTMLAttributes<HTMLDivElement> {

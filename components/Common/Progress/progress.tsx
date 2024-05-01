@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
-import { cn } from '@utils';
+import { cn } from '../../../lib/utils';
 
 const progressBarStyles = cva(
   'w-fit h-2 rounded-md bg-gray-1000 overflow-hidden',
